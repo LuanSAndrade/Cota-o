@@ -50,10 +50,11 @@ ACCESS_KEY=SuaAPIKeyAqui {tem um exemplo de como deve ser em .envexemple}
 Após configurar tudo, você pode iniciar o servidor com o seguinte comando:
 
 ```bash
-npm start
+node index.js
 ```
 
 O servidor estará rodando em: http://localhost:5000
+A aplicação em front-end estará rodando em http://127.0.0.1:5500/index.html (rodar primeiramente o servidor)
 
 ## **Rotas da API**
 
