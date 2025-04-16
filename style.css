@@ -1,0 +1,240 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #4A90E2;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+}
+
+section {
+    background: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+input {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 1em;
+    width: calc(100% - 20px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1em;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #357ABD;
+    transform: scale(1.05);
+}
+
+button#getHistorico {
+    background-color: #E94E77;
+}
+
+button#getHistorico:hover {
+    background-color: #D73761;
+    transform: scale(1.05);
+}
+
+#moedasResult ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#moedasResult li {
+    background: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.moedas-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 600px; 
+    overflow-y: scroll; 
+    overflow-x: hidden;
+}
+
+.moedas-lista li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 1em;
+}
+
+.lista-cotacoes {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 600px; 
+    overflow-y: scroll; 
+    overflow-x: hidden;
+}
+
+.lista-cotacoes li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 1em;
+}
+
+ul {
+    list-style-type: none;
+    list-style: none;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+}
+
+li {
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1em;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    background: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.titulo-cotacoes {
+    font-size: 1rem;
+    color: #4A90E2;
+    font-weight: bold;
+}
+
+li strong {
+    color: #333;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+li:hover {
+    transform: scale(1.05);
+    background-color: #e6f7ff;
+}
+
+#historicoResult {
+    margin-top: 20px;
+}
+
+.historico-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.historico-container h2 {
+    font-size: 1rem;
+    color: #4A90E2;
+    font-weight: bold;
+    margin: 0;
+}
+
+.historico-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px;
+}
+
+.historico-lista li {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: left;
+    font-size: 1em;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    background: #f9f9f9;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.historico-lista li:hover {
+    transform: scale(1.05);
+    background-color: #e6f7ff;
+}
+
+.historico-lista li div {
+    margin-bottom: 5px; 
+}
+
+.historico-lista li strong {
+    color: #333;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    section {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    button {
+        padding: 10px;
+    }
+
+    .lista-cotacoes {
+        grid-template-columns: 1fr; 
+    }
+
+    .historico-lista {
+        grid-template-columns: 1fr; 
+    }
+
+    #moedasResult ul {
+        grid-template-columns: 1fr; 
+    }
+}
+
