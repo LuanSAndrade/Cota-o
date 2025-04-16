@@ -54,7 +54,7 @@ node index.js
 ```
 
 O servidor estará rodando em: http://localhost:5000
-A aplicação em front-end estará rodando em http://127.0.0.1:5500/index.html (rodar primeiramente o servidor)
+A aplicação em front-end estará rodando em http://localhost:5500/index.html (rodar primeiramente o servidor)
 
 ## **Rotas da API**
 
